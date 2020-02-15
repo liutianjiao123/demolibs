@@ -1,0 +1,23 @@
+<form action="index.html" class="login-form">
+  <h1>Login</h1>
+
+  <div class="txtb">
+    <input type="text" [ngClass]="{'focus': username}" (focus)="username = true"
+           (blur)="onBlur($event)"
+    >
+    <span data-placeholder="UserName"></span>
+  </div>
+
+  <div class="txtb">
+    <input type="password" [ngClass]="{'focus': pwd}" (focus)="pwd = true"
+           (blur)="onBlur($event)">
+    <span data-placeholder="Password"></span>
+  </div>
+
+  <input type="submit" class="login-btn" value="Login">
+
+  <div class="bottom-text">
+    Don't have account? <a href="#">Sign up</a>
+  </div>
+</form>
+
